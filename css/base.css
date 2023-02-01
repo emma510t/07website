@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+  align-self: stretch;
+  object-fit: cover;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.small_product {
+  background-color: antiquewhite;
+  padding: 20px;
+}
+
+.sold_out img {
+  opacity: 0.5;
+}
