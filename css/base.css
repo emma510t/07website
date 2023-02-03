@@ -11,6 +11,10 @@ img {
   object-fit: cover;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -29,7 +33,7 @@ main {
 }
 
 .small_product {
-  background-color: antiquewhite;
+  background-color: rgb(244, 246, 253);
   padding: 20px;
 }
 
