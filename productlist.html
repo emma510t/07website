@@ -27,18 +27,21 @@
     <main>
         <h2>Accessories</h2>
         <div class="grid_1-1-1">
-            <article class="small_product">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="productdisplayname">
-                <h3>productdisplayname</h3>
-                <p class="subtle_info">brand | articletype | gender</p>
-                <p class="price">DKK price</p>
-                <div class="discounted">
-                    <p></p>
-                    <p></p>
-                </div>
-                <a href="product.html">View product</a>
-            </article>
-            <article class="small_product on_sale">
+            <template id="small_product_template">
+                <article class="small_product">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="productdisplayname">
+                    <h3>productdisplayname</h3>
+                    <p class="subtle_info">brand | articletype | gender</p>
+                    <p class="price">DKK price</p>
+                    <div class="discounted">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <a href="product.html">View product</a>
+                </article>
+            </template>
+            <!--       
+                 <article class="small_product on_sale">
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="Deck Navy Blue Backpack">
                 <h3>Deck Navy Blue Backpack</h3>
                 <p class="subtle_info">Puma | Backpacks | Unisex</p>
@@ -94,8 +97,10 @@
                 </div>
                 <a href="product.html">View product</a>
             </article>
+            --->
         </div>
     </main>
+    <script src="js/productlist.js"></script>
 </body>
 
 </html>
