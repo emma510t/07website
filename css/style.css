@@ -1,0 +1,73 @@
+.purchase {
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  padding: 20px;
+  margin: 0 0 auto auto;
+  max-width: 300px;
+}
+
+.purchase h2 {
+  padding-bottom: 20px;
+}
+
+.pinfo {
+  padding-bottom: 100px;
+}
+
+label select {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: honeydew;
+  border-style: solid;
+  border-color: black;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: darkseagreen;
+  border-style: solid;
+  border-color: black;
+  border-radius: 8px;
+  width: 100%;
+}
+.hide {
+  display: none;
+}
+
+.old_price {
+  text-decoration: line-through;
+}
+
+.discounted {
+  background-color: hotpink;
+  padding: 10px 10px;
+  margin: 0 0 0 auto;
+  max-width: 60px;
+  border-radius: 8px;
+}
+
+.info h3 {
+  margin-bottom: 18px;
+}
+
+.info p {
+  margin-bottom: 26px;
+}
+
+.info dt {
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.info dd {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-style: ;
+}

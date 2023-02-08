@@ -33,10 +33,16 @@ main {
 }
 
 .small_product {
-  background-color: rgb(244, 246, 253);
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
   padding: 20px;
 }
 
 .sold_out img {
   opacity: 0.5;
+}
+
+.on_sale {
+  background-color: red;
 }

@@ -29,9 +29,15 @@
             <img src="#" alt="alt">
             <section class="purchase">
                 <h2>productdisplayname</h2>
-                <p><span class="brand">brand</span> | <span class="articletype">articletype</span> | <span
+                <p class="pinfo"><span class="brand">brand</span> | <span class="articletype">articletype</span> | <span
                         class="gender">gender</span></p>
                 <p><span class="price">price</span> kr</p>
+                <div class="discounted hide">
+                    <p>
+                        -<span class="procent"></span>%
+                    </p>
+                    <p class="sale"></p>
+                </div>
                 <form>
                     <label>
                         Choose a size
@@ -42,26 +48,27 @@
                     <button>Add to basket</button>
                 </form>
             </section>
+
+            <section class="info">
+                <h3>Description</h3>
+                <p class="description">description</p>
+                <h3>Product Information</h3>
+
+                <dl>
+                    <dt>Model name</dt>
+                    <dd class="productdisplayname">productdisplayname</dd>
+                    <dt>Colour</dt>
+                    <dd class="basecolour">basecolour</dd>
+                    <dt>Productionyear</dt>
+                    <dd class="productionyear">productionyear</dd>
+
+                </dl>
+
+                <h3 class="brand">brand</h3>
+                <p class="brandbio">brandbio</p>
+                <img src="#" alt="alt">
+            </section>
         </div>
-        <section class="info">
-            <h3>Description</h3>
-            <p class="description">description</p>
-            <h3>Product Information</h3>
-
-            <dl>
-                <dt>Model name</dt>
-                <dd class="productdisplayname">productdisplayname</dd>
-                <dt>Colour</dt>
-                <dd class="basecolour">basecolour</dd>
-                <dt>Productionyear</dt>
-                <dd class="productionyear">productionyear</dd>
-
-            </dl>
-
-            <h3 class="brand">brand</h3>
-            <p class="brandbio">brandbio</p>
-            <img src="#" alt="alt">
-        </section>
     </main>
     <script src="js/product.js"></script>
 </body>

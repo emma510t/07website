@@ -24,23 +24,27 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Accessories</h2>
-        <div class="grid_1-1-1">
-            <template id="small_product_template">
-                <article class="small_product">
-                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="productdisplayname">
-                    <h3>productdisplayname</h3>
-                    <p class="subtle_info">brand | articletype | gender</p>
-                    <p class="price">DKK price</p>
-                    <div class="discounted">
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <a href="product.html">View product</a>
-                </article>
-            </template>
-            <!--       
+    <h2>Accessories</h2>
+    <main class="grid_1-1-1">
+
+        <template id="small_product_template">
+            <article class="small_product">
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="productdisplayname">
+                <h3>productdisplayname</h3>
+                <p class="subtle_info"><span class="brand">brand</span> | <span class="articletype">articletype</span> |
+                    <span class="gender">gender</span>
+                </p>
+                <p><span class="price">price</span> kr</p>
+                <div class="discounted hide">
+                    <p>
+                        -<span class="procent"></span>%
+                    </p>
+                    <p class="sale"></p>
+                </div>
+                <a href="product.html" class="read_more">View product</a>
+            </article>
+        </template>
+        <!--       
                  <article class="small_product on_sale">
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="Deck Navy Blue Backpack">
                 <h3>Deck Navy Blue Backpack</h3>
@@ -98,7 +102,7 @@
                 <a href="product.html">View product</a>
             </article>
             --->
-        </div>
+
     </main>
     <script src="js/productlist.js"></script>
 </body>

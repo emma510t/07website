@@ -1,5 +1,8 @@
 //https://kea-alt-del.dk/t7/api/products/1525
-fetch("https://kea-alt-del.dk/t7/api/products/1525")
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+
+fetch("https://kea-alt-del.dk/t7/api/products/" + id)
   .then((response) => response.json())
   .then((data) => showProduct(data));
 
@@ -13,6 +16,13 @@ function showProduct(product) {
   document.querySelector(".purchase .articletype").textContent = product.articletype;
   document.querySelector(".purchase .gender").textContent = product.gender;
   document.querySelector(".purchase .price").textContent = product.price;
+  document.querySelector(".procent").textContent = product.discount;
+  if (product.discount) {
+    //produktet er udsolgt
+    document.querySelector(".discounted").classList.add("procent");
+    document.querySelector(".discounted").classList.remove("hide");
+    document.querySelector(".price").classList.add("old_price");
+  }
   //info
   document.querySelector(".info .description").innerHTML = product.description;
   document.querySelector(".info .productdisplayname").textContent = product.productdisplayname;
