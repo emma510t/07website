@@ -23,6 +23,11 @@ function showProduct(product) {
     document.querySelector(".discounted").classList.remove("hide");
     document.querySelector(".price").classList.add("old_price");
   }
+  if (product.soldout) {
+    //produktet er udsolgt
+    document.querySelector("button").classList.add("inactive");
+    document.querySelector(".purchase .price").textContent = "sold out";
+  }
   //info
   document.querySelector(".info .description").innerHTML = product.description;
   document.querySelector(".info .productdisplayname").textContent = product.productdisplayname;

@@ -20,6 +20,61 @@ main {
   margin: 0 auto;
 }
 
+header {
+  background-color: honeydew;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 0 0 hotpink;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: hotpink;
+}
+
+header a:link,
+header a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+header a:hover {
+  color: hotpink;
+}
+
+footer {
+  background-color: honeydew;
+  box-shadow: 0 0 0 4px hotpink;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: hotpink;
+}
+
+main a:hover {
+  background-color: hotpink;
+  color: aliceblue;
+}
+
+main a {
+  padding: 10px;
+  display: block;
+  margin: 20px 0;
+}
+
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
