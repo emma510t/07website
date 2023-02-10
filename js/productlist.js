@@ -41,7 +41,7 @@ function showProduct(product) {
 
   copy.querySelector(".read_more").setAttribute("href", `product.html?id=${product.id}`);
   //appende
-  document.querySelector("main").appendChild(copy);
+  document.querySelector(".productlist1").appendChild(copy);
 }
 
 /* 
